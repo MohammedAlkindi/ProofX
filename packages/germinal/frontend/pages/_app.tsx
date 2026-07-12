@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import { useCallback, useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import Layout from "../components/Layout";
 import CommandPalette from "../components/CommandPalette";
 import { SettingsProvider } from "../context/SettingsContext";
@@ -34,6 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} onSidebarBump={bumpSidebar} />
       </Layout>
       <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
+      <Analytics />
     </SettingsProvider>
   );
 }

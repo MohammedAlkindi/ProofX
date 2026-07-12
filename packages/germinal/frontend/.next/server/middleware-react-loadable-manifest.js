@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST='{"components/MathDisplay.tsx -> katex":{"id":1008,"files":["static/chunks/175675d1.934ed3ef02285e8e.js"]}}';
